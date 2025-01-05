@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="379.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ridebuddies.ProfileController">
+    <children>
+        <TextField fx:id="username" editable="false" layoutX="104.0" layoutY="61.0" prefHeight="26.0" prefWidth="200.0" promptText="Username" />
+        <TextField fx:id="firstname" layoutX="104.0" layoutY="101.0" prefHeight="26.0" prefWidth="200.0" promptText="First Name" />
+        <TextField fx:id="lastname" layoutX="104.0" layoutY="141.0" prefHeight="26.0" prefWidth="200.0" promptText="Last Name" />
+        <TextField fx:id="email" layoutX="104.0" layoutY="181.0" prefHeight="26.0" prefWidth="200.0" promptText="Email" />
+        <TextField fx:id="age" layoutX="104.0" layoutY="219.0" prefHeight="26.0" prefWidth="200.0" promptText="Age" />
+        <TextField fx:id="description" layoutX="104.0" layoutY="266.0" prefHeight="50.0" prefWidth="200.0" promptText="Description" />
+
+        <Button fx:id="editButton" layoutX="41.0" layoutY="329.0" onAction="#onEditButtonClick" prefHeight="26.0" prefWidth="261.0" text="Edit" textFill="#16bf0a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button fx:id="deleteButton" layoutX="454.0" layoutY="329.0" onAction="#onDeleteButtonClick" text="Delete account" textFill="red" />
+        <Button fx:id="backToMain" layoutX="354.0" layoutY="329.0" onAction="#switchToMain" text="Back to Main" />
+      <Label layoutX="41.0" layoutY="65.0" text="Username:" />
+      <Label layoutX="39.0" layoutY="105.0" text="First Name:" />
+      <Label layoutX="39.0" layoutY="145.0" text="Last Name:" />
+      <Label layoutX="41.0" layoutY="185.0" text="Email:" />
+      <Label layoutX="45.0" layoutY="223.0" text="Age:" />
+      <Label layoutX="242.0" layoutY="14.0" text="My profile" textFill="#f49b01">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+        <ListView fx:id="friendListView" layoutX="354.0" layoutY="120.0" prefHeight="158.0" prefWidth="200.0" />
+
+        <Label layoutX="354.0" layoutY="91.0" prefHeight="27.0" prefWidth="108.0" text="My friends" textFill="#3607b7">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

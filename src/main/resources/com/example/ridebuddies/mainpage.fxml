@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="406.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ridebuddies.MainpageController">
+   <children>
+      <AnchorPane prefHeight="406.0" prefWidth="744.0">
+         <children>
+            <TextField fx:id="searchTextField" layoutX="104.0" layoutY="27.0" prefHeight="26.0" prefWidth="414.0" promptText="Please enter a username" />
+            <Label layoutX="63.0" layoutY="32.0" text="Search:" />
+            <Button fx:id="searchButton" layoutX="518.0" layoutY="28.0" onAction="#searchButtonOnAction" text="GO" />
+            <ListView fx:id="listView" layoutX="104.0" layoutY="77.0" prefHeight="288.0" prefWidth="414.0" />
+            <Button fx:id="addFriendButton" layoutX="561.0" layoutY="221.0" mnemonicParsing="false"
+                    prefHeight="40.0" prefWidth="134.0" text="Add friend" textFill="#00c735"
+                    onAction="#addFriendButtonOnAction">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="nameFriendLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="572.0" layoutY="126.0" prefHeight="18.0" prefWidth="112.0" text="name">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="usernameFriendLabel" alignment="CENTER" layoutX="572.0" layoutY="157.0" prefHeight="18.0" prefWidth="112.0" text="username">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <ImageView fitHeight="77.0" fitWidth="95.0" layoutX="678.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="ageFriendLabel" alignment="CENTER" layoutX="572.0" layoutY="188.0" prefHeight="18.0" prefWidth="112.0" text="age">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Button fx:id="gotoProfileButton" layoutX="596.0" layoutY="25.0" mnemonicParsing="false" onAction="#switchToProfile" text="My Profile" textFill="#d6a70d">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="confirmeFriendLabel" layoutX="591.0" layoutY="261.0" text="Friend added!" textFill="#00b463">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
